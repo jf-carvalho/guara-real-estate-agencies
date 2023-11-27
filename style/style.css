@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Vina+Sans&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #202020;
+  min-height: 100vh;
+  max-width: 100vw !important;
+}
+
+.title {
+  color: #f9f9f9;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  margin-top: 4rem;
+}
+
+.imobiliaria-row {
+  width: 100%;
+  padding-bottom: 6rem;
+  overflow-x: hidden;
+  white-space: nowrap;
+  overflow-y: hidden;
+  position: relative;
+}
+.imobiliaria-row .carousel {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.imobiliaria-row .carousel::-webkit-scrollbar {
+  appearance: none;
+}
+.imobiliaria-row::after {
+  content: ".......";
+  display: block;
+  font-size: 40px;
+  color: white;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: calc(50% - 100px);
+  opacity: 0.75;
+  letter-spacing: 0.5rem;
+}
+.imobiliaria-row .control {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imobiliaria-row .prev,
+.imobiliaria-row .next {
+  width: 40px;
+  height: 40px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  color: #f6f6f6;
+  font-family: "Vina Sans";
+}
+.imobiliaria-row .prev::before {
+  content: "<";
+}
+.imobiliaria-row .next::before {
+  content: ">";
+}
+.imobiliaria-row .start,
+.imobiliaria-row .end {
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.75rem;
+  cursor: pointer;
+  color: #f6f6f6;
+  font-family: "Vina Sans";
+}
+.imobiliaria-row .start::before {
+  content: "<<";
+}
+.imobiliaria-row .end::before {
+  content: ">>";
+}
+
+.carousel {
+  display: flex;
+  overflow-y: hidden;
+}
+
+.card {
+  display: block;
+  margin: 1rem;
+  min-width: 300px;
+  max-width: 300px;
+  height: 450px;
+  box-shadow: 5px 5px 20px 5px #111;
+  border-radius: 5px;
+  transform: scale(0.9);
+  transition: all 0.25s;
+  text-decoration: none !important;
+  color: #fff;
+  position: relative;
+  /* common */
+}
+.card .ribbon {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 99999;
+}
+.card .ribbon::before,
+.card .ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 5px solid #087829;
+}
+.card .ribbon span {
+  position: absolute;
+  display: block;
+  width: 225px;
+  padding: 15px 0;
+  background-color: #2cc75a;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font: 700 18px/1 "Lato", sans-serif;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+.card .ribbon-top-right {
+  top: -10px;
+  right: -10px;
+}
+.card .ribbon-top-right::before,
+.card .ribbon-top-right::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.card .ribbon-top-right::before {
+  top: 0;
+  left: 0;
+}
+.card .ribbon-top-right::after {
+  bottom: 0;
+  right: 0;
+}
+.card .ribbon-top-right span {
+  left: -25px;
+  top: 30px;
+  transform: rotate(45deg);
+}
+.card:hover {
+  transform: scale(1);
+}
+.card .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0.8;
+  filter: blur(3px);
+}
+.card .cover {
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 2;
+}
+
+.img-wrapper,
+.info-wrapper {
+  margin: 1rem;
+}
+
+.img-wrapper {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.info-wrapper {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.info-wrapper .info {
+  text-align: center;
+  overflow: hidden;
+  white-space: no-wrap;
+  text-overflow: ellipsis;
+}
+
+/*# sourceMappingURL=style.css.map */
