@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException
 import re
-import sys
+import logging
 
 def run(driver, quartos):
     driver.get("https://www.evandroproencaimoveis.com.br/imobiliaria/locacao/guaratingueta-sp/casa-casa/" + str(quartos) +"-quartos-ou-mais/imoveis/7423")
@@ -23,7 +23,7 @@ def run(driver, quartos):
         try:
             strip = result.find_elements(By.CSS_SELECTOR, '[class*=strip]')
         except Exception as e:
-            print('falhou: strip')
+            logging.error(f'Imóvel da imobiliária Evandro Proença falhou capturando strip')
             continue
 
         if (strip == []):
@@ -35,7 +35,7 @@ def run(driver, quartos):
                 href = href.group(1)
 
             except Exception as e:
-                print('falhou: href')
+                logging.error(f'Imóvel da imobiliária Evandro Proença falhou capturando href')
                 continue
 
             new_cached.append('\n'+href)
@@ -49,7 +49,7 @@ def run(driver, quartos):
                 image = result.find_element(By.CSS_SELECTOR, '.carousel-item.active img').get_attribute('src')
 
             except Exception as e:
-                print('falhou: image')
+                logging.error(f'Imóvel da imobiliária Evandro Proença falhou capturando imagem')
                 continue
 
             value = None
@@ -57,7 +57,7 @@ def run(driver, quartos):
             try:
                 value = result.find_element(By.CSS_SELECTOR, '[class*=property-card_rent-price]').text
             except Exception as e:
-                print('falhou: value')
+                logging.error(f'Imóvel da imobiliária Evandro Proença falhou capturando valor')
                 continue
 
             location = None
@@ -65,7 +65,7 @@ def run(driver, quartos):
             try:
                 location = result.find_element(By.CSS_SELECTOR, '[class*=property-card_address]').text
             except Exception as e:
-                print('falhou: location')
+                logging.error(f'Imóvel da imobiliária Evandro Proença falhou capturando location')
                 continue
 
             houses.append({

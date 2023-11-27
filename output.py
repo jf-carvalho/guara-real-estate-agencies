@@ -7,8 +7,7 @@ def build(imobiliarias):
     with doc.head:
         link(rel='stylesheet', href='style/style.css')
         script(src='script/script.js')
-        meta(name="viewport", content="width=device-width, initial-scale=1")
-
+        meta(name="viewport", content="width=device-width, initial-scale=1", charset='utf-8')
 
     with doc:
         for imobiliaria, houses in imobiliarias.items():

@@ -9,7 +9,7 @@ import scripts_imobiliarias.ferri as ferri
 import scripts_imobiliarias.oliveira as oliveira
 import scripts_imobiliarias.ativa as ativa
 import scripts_imobiliarias.evandro as evandro
-# import scripts_imobiliarias.villa as villa
+import scripts_imobiliarias.villa as villa
 import output
 import time
 
@@ -29,7 +29,7 @@ def run(quartos):
         "oliveira alves": oliveira,
         "ativa": ativa,
         "evandro proença": evandro,
-        # "villa": villa
+        "villa": villa
     }
 
     l = len(items)
