@@ -11,6 +11,7 @@ import scripts_imobiliarias.ativa as ativa
 import scripts_imobiliarias.evandro as evandro
 import scripts_imobiliarias.villa as villa
 import scripts_imobiliarias.castro_santos as castro_santos
+import scripts_imobiliarias.olimpo as olimpo
 import output
 import time
 
@@ -32,6 +33,7 @@ def run(quartos):
         "evandro proença": evandro,
         "villa": villa,
         "castro_santos": castro_santos,
+        "olimpo": olimpo,
     }
 
     l = len(items)
