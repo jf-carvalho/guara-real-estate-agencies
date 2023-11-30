@@ -42,7 +42,7 @@ def run(driver, quartos):
             
             value_string = value.text
 
-            if (value_string == 'CONSULTARR$ 0,00'):
+            if (value_string == 'CONSULTARR$ 0,00' or value_string == 'CONSULTAR'):
                 continue
             
             value_float = float(value_string.replace('R$ ', '').replace('.', '').replace(',', '.'))
