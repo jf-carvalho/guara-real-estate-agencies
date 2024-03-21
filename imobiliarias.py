@@ -1,17 +1,17 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import argparse
-import scripts_imobiliarias.wanor as wanor
-import scripts_imobiliarias.rony as rony
-import scripts_imobiliarias.i3a as i3a
-import scripts_imobiliarias.habit as habit
-import scripts_imobiliarias.ferri as ferri
-import scripts_imobiliarias.oliveira as oliveira
-import scripts_imobiliarias.ativa as ativa
-import scripts_imobiliarias.evandro as evandro
-import scripts_imobiliarias.villa as villa
-import scripts_imobiliarias.castro_santos as castro_santos
-import scripts_imobiliarias.olimpo as olimpo
+import selenium_scripts.wanor as wanor
+import selenium_scripts.rony as rony
+import selenium_scripts.i3a as i3a
+import selenium_scripts.habit as habit
+import selenium_scripts.ferri as ferri
+import selenium_scripts.oliveira as oliveira
+import selenium_scripts.ativa as ativa
+import selenium_scripts.evandro as evandro
+import selenium_scripts.villa as villa
+import selenium_scripts.castro_santos as castro_santos
+import selenium_scripts.olimpo as olimpo
 import output
 import time
 

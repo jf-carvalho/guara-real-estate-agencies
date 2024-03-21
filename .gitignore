@@ -3,3 +3,5 @@ __pycache__/
 *$py.class
 
 .sass-cache
+
+selenium/__pycache__/
