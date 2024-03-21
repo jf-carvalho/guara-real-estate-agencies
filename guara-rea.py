@@ -31,7 +31,7 @@ def run(quartos):
         "oliveira alves": oliveira,
         "ativa": ativa,
         "evandro proença": evandro,
-        "villa": villa,
+        # "villa": villa,
         "castro_santos": castro_santos,
         "olimpo": olimpo,
     }
