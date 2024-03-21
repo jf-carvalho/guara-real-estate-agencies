@@ -1,10 +1,10 @@
+*.log
+
 __pycache__/
 *.py[cod]
 *$py.class
 
 .sass-cache
-
-*.log
 
 selenium/__pycache__/
 
