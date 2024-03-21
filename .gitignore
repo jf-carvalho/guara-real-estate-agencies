@@ -4,6 +4,8 @@ __pycache__/
 
 .sass-cache
 
+*.log
+
 selenium/__pycache__/
 
 cache/
