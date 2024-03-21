@@ -24,7 +24,7 @@ def run(driver, quartos):
     houses = []
     new_cached = []
 
-    with open('cache/olimpo', 'r') as file:
+    with open('cache/olimpo', 'w+') as file:
         cached = file.read().splitlines()                
         file.close()
 
