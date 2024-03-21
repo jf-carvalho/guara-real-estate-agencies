@@ -9,3 +9,5 @@ __pycache__/
 selenium/__pycache__/
 
 cache/
+
+index.html
